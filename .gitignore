@@ -1,0 +1,6 @@
+# https://help.github.com/ignore-files/
+node_modules
+build
+dist
+.DS_store
+npm-debug.log*
