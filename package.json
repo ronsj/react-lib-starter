@@ -6,6 +6,9 @@
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
+  "files": [
+    "dist"
+  ],
   "peerDependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
