@@ -1,14 +1,10 @@
 {
   "name": "cdn",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "start": "serve"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "react-lib-starter": "file:../.."
   },
