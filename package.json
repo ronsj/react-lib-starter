@@ -11,7 +11,7 @@
   "homepage": "https://github.com/ronsj/react-lib-starter",
   "main": "dist/bundle.cjs.js",
   "module": "dist/bundle.esm.js",
-  "browser": "dist/bundle.umd.js",
+  "sideEffects": false,
   "files": [
     "dist"
   ],

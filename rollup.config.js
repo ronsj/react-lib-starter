@@ -15,18 +15,18 @@ export default (async () => ({
   input: 'src/index.js',
   output: [
     {
-      file: pkg.main,
+      file: 'dist/bundle.cjs.js', // package.json -> "main"
       format: 'cjs',
       sourcemap: true,
     },
     {
-      file: pkg.module,
+      file: 'dist/bundle.esm.js', // package.json -> "module"
       format: 'esm',
       sourcemap: true,
     },
     {
       esModule: false,
-      file: pkg.browser,
+      file: 'dist/bundle.umd.js',
       format: 'umd',
       globals: {
         react: 'React',
