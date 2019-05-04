@@ -6,7 +6,7 @@ import pkg from './package.json';
 
 const UMD_NAME = pkg.name
   .split('-')
-  .map(name => name.charAt(0).toUpperCase() + name.slice(1))
+  .map((name) => name.charAt(0).toUpperCase() + name.slice(1))
   .join('');
 
 export default {
@@ -15,30 +15,30 @@ export default {
     {
       file: pkg.main,
       format: 'cjs',
-      sourcemap: true
+      sourcemap: true,
     },
     {
       file: pkg.module,
       format: 'esm',
-      sourcemap: true
+      sourcemap: true,
     },
     {
       esModule: false,
       file: 'dist/bundle.umd.js',
       format: 'umd',
       globals: {
-        react: 'React'
+        react: 'React',
       },
       name: UMD_NAME,
       sourcemap: true,
-    }
+    },
   ],
   plugins: [
     resolve(),
     babel({
-      exclude: 'node_modules/**' // only transpile our source code
+      exclude: 'node_modules/**', // only transpile our source code
     }),
-    commonjs()
+    commonjs(),
   ],
-  external: ['react']
-}
+  external: ['react'],
+};
