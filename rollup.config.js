@@ -2,7 +2,6 @@ import babel from 'rollup-plugin-babel';
 import commonjs from 'rollup-plugin-commonjs';
 import resolve from 'rollup-plugin-node-resolve';
 
-
 import pkg from './package.json';
 
 const UMD_NAME = pkg.name
@@ -25,7 +24,7 @@ export default {
     },
     {
       esModule: false,
-      file: 'dist/index.umd.js',
+      file: 'dist/bundle.umd.js',
       format: 'umd',
       globals: {
         react: 'React'
@@ -41,5 +40,5 @@ export default {
     }),
     commonjs()
   ],
-  external: ['react', 'react-dom']
+  external: ['react']
 }
