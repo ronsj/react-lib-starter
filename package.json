@@ -39,6 +39,9 @@
     "not dead",
     "not op_mini all"
   ],
+  "engines": {
+    "node": ">=10"
+  },
   "peerDependencies": {
     "react": "^16.8.6"
   },
