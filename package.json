@@ -34,6 +34,11 @@
       "git add"
     ]
   },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ],
   "peerDependencies": {
     "react": "^16.8.6"
   },
