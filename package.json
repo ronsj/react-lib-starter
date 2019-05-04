@@ -4,6 +4,11 @@
   "description": "Starter kit for publishing React component libraries",
   "author": "Ron San Jose",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ronsj/react-lib-starter.git"
+  },
+  "homepage": "https://github.com/ronsj/react-lib-starter",
   "main": "dist/bundle.cjs.js",
   "module": "dist/bundle.esm.js",
   "files": [
