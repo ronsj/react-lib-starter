@@ -9,6 +9,10 @@
   "files": [
     "dist"
   ],
+  "scripts": {
+    "lint": "eslint '**/*.js'",
+    "lint:fix": "eslint '**/*.js' --fix"
+  },
   "peerDependencies": {
     "react": "^16.8.6"
   },
