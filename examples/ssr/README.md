@@ -1,4 +1,4 @@
-# CDN Example
+# SSR Example
 
 ```sh
 npm install
