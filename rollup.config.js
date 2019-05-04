@@ -4,12 +4,14 @@ import resolve from 'rollup-plugin-node-resolve';
 
 import pkg from './package.json';
 
+const isProduction = !process.env.ROLLUP_WATCH;
+
 const UMD_NAME = pkg.name
   .split('-')
   .map((name) => name.charAt(0).toUpperCase() + name.slice(1))
   .join('');
 
-export default {
+export default (async () => ({
   input: 'src/index.js',
   output: [
     {
@@ -39,6 +41,7 @@ export default {
       exclude: 'node_modules/**', // only transpile our source code
     }),
     commonjs(),
+    isProduction && (await import('rollup-plugin-terser')).terser(),
   ],
   external: ['react'],
-};
+}))();
