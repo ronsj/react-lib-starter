@@ -24,7 +24,7 @@ export default {
     },
     {
       esModule: false,
-      file: 'dist/bundle.umd.js',
+      file: pkg.browser,
       format: 'umd',
       globals: {
         react: 'React',
